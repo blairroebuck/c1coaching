@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | C1 Coaching</title>
+  <meta name="description" content="Get in touch with C1 Coaching to book a trial session or find out more about our football coaching programmes in Basildon." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon"><img src="images/company_logo.jpg" alt="C1 Coaching logo" /></div>
+        <span class="nav-logo-text">C1 Coaching</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="football-camps.html">Football Camps</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <h1>Contact Us</h1>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info -->
+        <div class="contact-info">
+          <h2>Get in Touch</h2>
+          <p style="color:var(--muted);margin-bottom:28px;">We'd love to hear from you. Fill in the form or reach us directly using the details below.</p>
+
+          <div class="contact-detail">
+            <span class="icon">📞</span>
+            <div>
+              <strong>Phone</strong><br />
+              <a href="tel:+447980792632">+44 7980 792 632</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="icon">✉</span>
+            <div>
+              <strong>Email</strong><br />
+              <a href="mailto:enquiries@C1coaching.co.uk">enquiries@C1coaching.co.uk</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="icon">📍</span>
+            <div>
+              <strong>Location</strong><br />
+              Basildon, Essex
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="icon">f</span>
+            <div>
+              <strong>Facebook</strong><br />
+              <a href="https://www.facebook.com/profile.php?id=100093685154457" target="_blank" rel="noopener">C1 Coaching on Facebook</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <!-- To receive form submissions, sign up at formspree.io and replace YOUR_FORM_ID below -->
+        <form
+          id="contact-form"
+          class="contact-form"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <label for="parent-name">Parent / Contact Name *</label>
+              <input type="text" id="parent-name" name="parent_name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Contact Mobile Number *</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Contact Email *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="player-name">Player Name *</label>
+              <input type="text" id="player-name" name="player_name" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="player-age">Player Age *</label>
+              <input type="number" id="player-age" name="player_age" min="4" max="18" required />
+            </div>
+            <div class="form-group">
+              <label for="player-gender">Player Gender</label>
+              <select id="player-gender" name="player_gender">
+                <option value="">Select...</option>
+                <option value="Boy">Boy</option>
+                <option value="Girl">Girl</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Interested in (tick all that apply)</label>
+            <div class="checkboxes">
+              <label class="checkbox-label">
+                <input type="checkbox" name="interest" value="1:1 Training" />
+                Interested in 1:1 training
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interest" value="Group Training" />
+                Interested in joining a group training session for my age group
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interest" value="Team Training" />
+                Interested in a training session for my Team
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="how-found">How did you find out about us?</label>
+            <input
+              type="text"
+              id="how-found"
+              name="how_found"
+              placeholder="e.g. Facebook, friend referral, web search, QR code..."
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="gdpr-label">
+              <input type="checkbox" name="gdpr_consent" required />
+              <span>I hereby agree that this data will be stored and processed for the purpose of establishing contact. I am aware that I can revoke my consent at any time. *</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-gold">Send Message</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="nav-logo-icon"><img src="images/company_logo.jpg" alt="C1 Coaching logo" /></div>
+            <span class="nav-logo-text">C1 Coaching</span>
+          </div>
+          <p>Elite football coaching in Basildon for individual players and teams of all ages.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="football-camps.html">Football Camps</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <address>
+            <a href="tel:+447980792632">+44 7980 792 632</a><br />
+            <a href="mailto:enquiries@C1coaching.co.uk">enquiries@C1coaching.co.uk</a><br />
+            Basildon, Essex
+          </address>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/profile.php?id=100093685154457" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">f</a>
+            <a href="mailto:enquiries@C1coaching.co.uk" class="social-btn" aria-label="Email">✉</a>
+            <a href="tel:+447980792632" class="social-btn" aria-label="Phone">✆</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 C1 Coaching. All rights reserved.</p>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
